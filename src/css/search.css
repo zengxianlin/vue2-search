@@ -1,0 +1,179 @@
+/*
+* @Author: zengxianlin
+* @Date:   2016-12-01 13:42:08
+* @Last Modified by:   877529974@qq.com
+* @Last Modified time: 2016-12-01 18:00:37
+*/
+*{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+input{
+    border:none;
+    background-color:#fff;
+    padding:0 12px;
+    font-size:16px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    outline: none;
+}
+.body{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    background-image:url('./../assets/bg1.jpg');
+}
+.center{
+    width:960px;
+    margin:0 auto;
+}
+.anime {
+    text-align: center;
+    width:440px;
+    height:126px;
+    margin:150px auto 50px;
+    position: relative;
+    background-color:#fff;
+}
+.anime img{
+    width:432px;
+    height:126px;
+}
+.arrow{
+    width:50px;
+    height:50px;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    right: 0px;
+}
+.arrow:after{
+    content:'';
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    right: 18px;
+    border: 8px solid;
+    border-color: #666 transparent transparent transparent;
+}
+.logolist{
+    position: absolute;
+    top: 126px;
+    left: 50%;
+    margin-left: -120px;
+    z-index:100;
+    border: 1px solid #ccc;
+    background-color:#fff;
+    display: none;
+}
+.logolist li{
+    width: 240px;
+    height: 70px;
+    background-color:#fff;
+}
+.logolist li:hover{
+    background-color:#eee;
+    cursor:pointer;
+    z-index: 1111;
+}
+.anime:hover .logolist{
+    display: block;
+}
+.logolist img{
+    width: 240px;
+    height: 70px;
+}
+#search{
+    width:640px;
+    margin:0 auto;
+    position: relative;
+}
+.search{
+    width:531px;
+    border: 1px solid #ccc;
+    display: block;
+    height:44px;
+}
+.results{
+    width: 531px;
+    border: 1px solid rgba(255,255,255,.3);
+    position: absolute;
+    top: 43px;
+    left: 0;
+    background-color:rgba(255,255,255,.3);
+    font-size:16px;
+    // display: none;
+}
+.results li{
+    text-align: left;
+    padding: 6px 12px;
+}
+.results li.gray,.results li:hover{
+    background-color:#fff;
+    cursor:pointer;
+}
+.text{
+    width: 100%;
+    padding: 12px;
+    position: absolute;
+    color:#333;
+    top: 1px;
+    left: 1px;
+    padding-right: 122px;
+}
+.button{
+    width:110px;
+    height: 44px;
+    color:#fff;
+    position: absolute;
+    top: 0;
+    right: -1px;
+    cursor:pointer;
+}
+//百度
+.baidu{
+    background-color:#3385ff;
+}
+.baidu:hover{
+    background-color:#317ef3;
+}
+//360
+.sanliuling{
+    background-color:#3385ff;
+}
+.sanliuling:hover{
+    background-color:#317ef3;
+}
+//搜狗
+.sougou{
+    background-color:#fd6853;
+}
+.sougou:hover{
+    background-color:#ff5943;
+}
+
+/* 切换页面效果 */
+.in-out-translate-demo-wrapper {
+  position: relative;
+}
+.in-out-translate-demo-wrapper .router {
+  position: absolute;
+}
+.in-out-translate-fade-enter-active, .in-out-translate-fade-leave-active {
+  transition: all .3s;
+}
+.in-out-translate-fade-enter, .in-out-translate-fade-leave-active {
+  opacity: 0;
+}
+.in-out-translate-fade-enter {
+  transform: translateX(100%);
+}
+.in-out-translate-fade-leave-active {
+  transform: translateX(-100%);
+}
